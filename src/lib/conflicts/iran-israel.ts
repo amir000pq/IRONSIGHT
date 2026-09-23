@@ -239,34 +239,42 @@ export const iranIsrael: ConflictConfig = {
     flightsBBox: { latMin: 10, latMax: 45, lonMin: 20, lonMax: 70 },
 
     newsFeeds: [
+      // خاورمیانه
       { url: 'https://feeds.bbci.co.uk/news/world/middle_east/rss.xml', name: 'BBC', unfiltered: true },
       { url: 'https://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml', name: 'NYT', unfiltered: true },
       { url: 'https://www.aljazeera.com/xml/rss/all.xml', name: 'Al Jazeera' },
       { url: 'https://feeds.reuters.com/Reuters/worldNews', name: 'Reuters' },
-      { url: 'https://www.timesofisrael.com/feed/', name: 'Times of Israel', unfiltered: true },
-      { url: 'https://www.jpost.com/rss/rssfeedsfrontpage.aspx', name: 'JPost', unfiltered: true },
-      { url: 'https://www.ynetnews.com/Integration/StoryRss2.xml', name: 'Ynet', unfiltered: true },
-      { url: 'https://rcs.mako.co.il/rss/news-military.xml', name: 'N12', unfiltered: true },
-      { url: 'https://rss.walla.co.il/feed/22', name: 'Walla', unfiltered: true },
       { url: 'https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml', name: 'The National' },
       { url: 'http://rss.cnn.com/rss/edition_meast.rss', name: 'CNN' },
       { url: 'https://moxie.foxnews.com/google-publisher/world.xml', name: 'Fox News' },
       { url: 'https://feeds.content.dowjones.io/public/rss/RSSWorldNews', name: 'WSJ' },
-      { url: 'https://news.google.com/rss/search?q=Iran+Israel+war+military&hl=en-US&gl=US&ceid=US:en', name: 'Google News', unfiltered: true },
-      { url: 'https://news.google.com/rss/search?q=Iran+missile+strike+drone&hl=en-US&gl=US&ceid=US:en', name: 'Google News', unfiltered: true },
-      { url: 'https://news.google.com/rss/search?q=%22Strait+of+Hormuz%22+OR+%22Red+Sea%22+military&hl=en-US&gl=US&ceid=US:en', name: 'Google News', unfiltered: true },
       { url: 'https://breakingdefense.com/feed/', name: 'Breaking Def' },
       { url: 'https://www.longwarjournal.org/feed', name: 'Long War Jrnl' },
       { url: 'https://www.militarytimes.com/arc/outboundfeeds/rss/?outputType=xml', name: 'Mil Times' },
       { url: 'https://warontherocks.com/feed/', name: 'War on Rocks' },
       { url: 'https://www.centcom.mil/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=808&max=20', name: 'CENTCOM', unfiltered: true },
       { url: 'https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10', name: 'DoD', unfiltered: true },
-      { url: 'https://www.haaretz.com/srv/haaretz-latest-headlines', name: 'Haaretz', unfiltered: true },
-      { url: 'https://www.haaretz.com/srv/middle-east-news-rss', name: 'Haaretz', unfiltered: true },
+      { url: 'https://news.google.com/rss/search?q=Iran+Israel+war+military&hl=en-US&gl=US&ceid=US:en', name: 'Google News', unfiltered: true },
+      { url: 'https://news.google.com/rss/search?q=Iran+missile+strike+drone&hl=en-US&gl=US&ceid=US:en', name: 'Google News', unfiltered: true },
+      { url: 'https://news.google.com/rss/search?q=%22Strait+of+Hormuz%22+OR+%22Red+Sea%22+military&hl=en-US&gl=US&ceid=US:en', name: 'Google News', unfiltered: true },
       { url: 'https://www.dropsitenews.com/feed', name: 'Drop Site' },
+      
+      // منابع اسرائیلی
+      { url: 'https://www.mako.co.il/news-channel12/rss.xml', name: 'کانال 12 (Mako N12)', unfiltered: true },
+      { url: 'https://www.c14.co.il/news/rss', name: 'کانال 14 (اکنون 14)', unfiltered: true },
+      { url: 'https://www.timesofisrael.com/feed/', name: 'اوقات اسرائیل', unfiltered: true },
+      { url: 'https://www.jpost.com/rss/rssfeedsfrontpage.aspx', name: 'پست جروزالم', unfiltered: true },
+      { url: 'https://www.ynetnews.com/Integration/StoryRss2.xml', name: 'Ynet', unfiltered: true },
+      { url: 'https://rcs.mako.co.il/rss/news-military.xml', name: 'N12 نظامی', unfiltered: true },
+      { url: 'https://rss.walla.co.il/feed/22', name: 'والا', unfiltered: true },
+      { url: 'https://www.haaretz.com/srv/haaretz-latest-headlines', name: 'هآرتص', unfiltered: true },
+      { url: 'https://www.haaretz.com/srv/middle-east-news-rss', name: 'هآرتص خاورمیانه', unfiltered: true },
+      
+      // منابع ایرانی
+      { url: 'https://www.iranintl.com/rss', name: 'ایران اینترنشنال', unfiltered: true },
       { url: 'https://www.presstv.ir/rss.xml', name: 'PressTV', unfiltered: true },
-      { url: 'https://www.presstv.ir/rss/rss-102.xml', name: 'PressTV', unfiltered: true },
-      { url: 'https://www.presstv.ir/rss/rss-101.xml', name: 'PressTV', unfiltered: true },
+      { url: 'https://www.presstv.ir/rss/rss-102.xml', name: 'PressTV خبری', unfiltered: true },
+      { url: 'https://www.presstv.ir/rss/rss-101.xml', name: 'PressTV سیاسی', unfiltered: true },
     ],
     newsRelevanceKeywords: /ایران|اسرائیل|idf|irgc|حزب‌الله|حماس|انصارالله|لبنان|غزه|تهران|تل\s?آویو|بیت‌المقدس|یمن|عراق|سوریه|خلیج|هرمز|دریای\s?سرخ|موشک|حمله|رهگیری|هسته|تحریم|centcom|pentagon|خاورمیانه|کرانه.*باختری|جولان|سینا|نگوو|دیمونا|ناتنز|اصفهان|خامنه|نتانیاهو|نصرالله|رئیسی|آیت‌الله|موساد|شین‌بت|قدس|بسیج|توکل|سقوط|تغییر|حمله.*زمینی|حمله.*هوایی|پهپاد.*(?:ایران|اسرائیل|حمله)|بالستیک|عربستان|امارات|uae|بحرین|قطر|کویت|عمان|gcc|opec/i,
 
@@ -322,7 +330,7 @@ export const iranIsrael: ConflictConfig = {
     ],
     shipRegions: ['خلیج‌فارس', 'دریای سرخ', 'مدیترانه شرقی', 'دریای عرب'],
 
-    alertProvider: 'سیستم هشدار اسرائیل',
+    alertProvider: 'tzevaadom',
     // هیچ منبع ردیابی پهپاد رایگان برای این تئاتر نیست
   },
 };
